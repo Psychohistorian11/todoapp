@@ -1,0 +1,15 @@
+<h1>holisss</h1>
+{{title}}
+
+<ul>
+    <li *ngFor="let task of tasks">
+        {{task}}
+    </li>
+</ul>
+
+<h1>Signal</h1>
+<h4>Nombre</h4>
+{{name()}}
+<br>
+<input type="text" [value]="name()" (keydown)="changeHandler($event)"/>
+
